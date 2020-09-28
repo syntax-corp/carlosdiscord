@@ -55,7 +55,7 @@ async def help(ctx):
 
 @client.command(aliases=['hi', 'hey'])
 async def hello(ctx):
-  await ctx.send('Hello!')
+  await ctx.send(f'Hello, {ctx.author.name}!')
 
 @client.command()
 async def ping(ctx):
